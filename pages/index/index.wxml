@@ -46,7 +46,7 @@
         <view class="right">￥680</view>
       </view>
       <view class="btn-group flex-end">
-        <button class="btn js-edit-customer">编辑客户</button>
+        <button class="btn js-edit-customer" bindtap="goCustomer" data-page="edit">编辑客户</button>
         <button class="btn js-download-constract">下载合同</button>
         <button class="btn active js-transaction-order">下单</button>
       </view>
@@ -76,7 +76,7 @@
         <view class="right">￥680</view>
       </view>
       <view class="btn-group flex-end">
-        <button class="btn js-edit-customer">编辑客户</button>
+        <button class="btn js-edit-customer" bindtap="goCustomer" data-page="see">查看客户</button>
         <button class="btn js-new-contract">新建合同</button>
       </view>
     </view>

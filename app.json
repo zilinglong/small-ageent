@@ -5,7 +5,7 @@
     "pages/paid/paid",
     "pages/sale/sale",
     "pages/order/order",
-    "pages/test/test"
+    "pages/customer/customer"
   ],
   "window": {
     "backgroundTextStyle": "light",

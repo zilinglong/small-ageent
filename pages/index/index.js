@@ -24,8 +24,19 @@ Page({
   },
   navSwitch(event) {
     let cur = event.currentTarget.dataset.index;
-    this.setData({
-      curNav: cur
+    if (cur === this.data.curNav) {
+      return false;
+    } else {
+      this.setData({
+        curNav: cur
+      });
+    }
+  },
+  // 编辑客户
+  goCustomer(event) {
+    let flag = event.currentTarget.dataset.page;
+    wx.navigateTo({
+      url: `../customer/customer?page=${flag}`,
     });
   },
   onLoad: function () {
