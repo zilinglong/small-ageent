@@ -1,0 +1,11 @@
+<view>
+  <text>{{pageName}}</text>
+  <view wx:for="{{array}}">{{item}}</view>
+  <!-- 条件渲染 -->
+  <view wx:if="{{view==='webview'}}">webview</view>
+  <view wx:elif="{{view==='app'}}">app</view>
+  <view wx:else="{{view===mina}}">mina</view>
+  <view>当前count值为：{{count}}
+    <button bindtap="addCount">count值+10</button>
+  </view>
+</view>

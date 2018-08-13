@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/paid/paid",
+    "pages/sale/sale",
+    "pages/order/order",
+    "pages/test/test"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "代理商",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#eee"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的客户",
+        "iconPath": "./images/icon_index.png",
+        "selectedIconPath": "./images/icon_index_active.png"
+      },
+      {
+        "pagePath": "pages/paid/paid",
+        "text": "付费会员",
+        "iconPath": "./images/icon_paid.png",
+        "selectedIconPath": "./images/icon_paid_active.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单统计",
+        "iconPath": "./images/icon_order.png",
+        "selectedIconPath": "./images/icon_order_active.png"
+      },
+      {
+        "pagePath": "pages/sale/sale",
+        "text": "销售统计",
+        "iconPath": "./images/icon_sale.png",
+        "selectedIconPath": "./images/icon_sale_active.png"
+      }
+    ],
+    "selectedColor": "#fe9e02"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}

@@ -1,0 +1,148 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.top-bar {
+  width: 100%;
+  overflow: scroll;
+  white-space:nowrap;
+  font-size: 26rpx;
+  color: #666;
+  height: 92rpx;
+  line-height: 90rpx;
+  background: #fff;
+}
+
+.top-bar .nav-item {
+  display: inline-block;
+  padding: 0 20rpx;
+}
+
+.top-bar .active {
+  color: #fe9e02;
+  border-bottom: 2px solid #fe9e02;
+}
+
+.content-item {
+  margin-top: 20rpx;
+  padding: 20rpx 20rpx 0;
+  background: #fff;
+}
+
+.top-info .icon-status {
+  display: inline-block;
+  width: 82rpx;
+  height: 43rpx;
+  line-height: 43rpx;
+  font-size: 28rpx;
+  color: #fff;
+  text-align: center;
+  background: #fe9e02;
+}
+
+.user-info {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.top-info .school {
+  font-size: 32rpx;
+  color: #333;
+  margin-left: 10rpx;
+}
+
+.top-info .name {
+  font-size: 28rpx;
+  margin-right: 60rpx;
+}
+
+.right {
+  font-size: 26rpx;
+}
+
+.right .money {
+  color: #fe9e02;
+}
+
+.user-info {
+  height: 60rpx;
+  line-height: 60rpx;
+}
+
+.doc-detail {
+  height: 108rpx;
+  margin-bottom: 20rpx;
+  background: #f4f4f4;
+}
+
+.doc-detail .doc-img {
+  display: inline-block;
+  width: 108rpx;
+  height: 108rpx;
+  margin-right: 20rpx;
+  background: #2e96d7;
+}
+
+.user-info .name {
+  margin-right: 40rpx;
+}
+
+.contract-info .contract-code {
+  margin: 0.15rpx 0;
+  font-size: 24rpx;
+  color: #333;
+}
+
+.contract-info .payer {
+  font-size: 22rpx;
+}
+
+.doc-detail .right {
+  margin-right: 20rpx;
+  font-size: 26rpx;
+  color: #333;
+}
+
+.btn-group {
+  height: 90rpx;
+  line-height: 90rpx;
+  padding: 15rpx 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.btn-group .btn {
+  width: 180rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  /* margin-left: 20rpx; */
+  background: #fff;
+  border-radius: 10rpx;
+  border: 1px solid #e0e0e0;
+  font-size: 26rpx;
+  color: #333;
+  text-align: center;
+}
+
+.btn-group .active {
+  color: #fe9e02;
+  border: 1px solid #fe9e02;
+}

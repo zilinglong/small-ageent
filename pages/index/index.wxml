@@ -1,0 +1,113 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view>
+    <button bindtap="cviewckMe">点击我</button>
+  </view>
+</view> -->
+<view class="wrap">
+  <!-- 顶部导航 -->
+  <scroll-view class="top-bar" scroll-x scroll-with-animation>
+    <view wx:for="{{navList}}" wx:key="idx" wx:for-index="idx" data-index="{{idx}}" class="nav-item {{curNav===idx?'active':''}}" bindtap="navSwitch">{{item}}</view>
+  </scroll-view>
+  <!-- 内容列表 -->
+  <view class="content-list">
+    <view class="content-item">
+      <view class="top-info flex-between">
+        <view class="left">
+          <text class="icon-status">已付</text>
+          <text class="school">北京中关村幼儿园</text>
+        </view>
+        <view class="right">已付
+          <text class="money">￥368.00</text>
+        </view>
+      </view>
+      <view class="user-info">
+        <text class="name">张胜国</text>
+        <text class="phone">12345678901</text>
+      </view>
+      <view class="doc-detail flex-between">
+        <view class="left flex-start">
+          <image src="../../images/fg-word.png" alt="" class="doc-img"></image>
+          <view class="contract-info">
+            <view class="contract-code">合同编号：S01234567</view>
+            <view class="payer">付款人：李明辉</view>
+          </view>
+        </view>
+        <view class="right">￥680</view>
+      </view>
+      <view class="btn-group flex-end">
+        <button class="btn js-edit-customer">编辑客户</button>
+        <button class="btn js-download-constract">下载合同</button>
+        <button class="btn active js-transaction-order">下单</button>
+      </view>
+    </view>
+    <view class="content-item">
+      <view class="top-info flex-between">
+        <view class="left">
+          <text class="icon-status">意向</text>
+          <text class="school">北京中关村幼儿园</text>
+        </view>
+        <view class="right">已付
+          <text class="money">￥368.00</text>
+        </view>
+      </view>
+      <view class="user-info">
+        <text class="name">张胜国</text>
+        <text class="phone">12345678901</text>
+      </view>
+      <view class="doc-detail flex-between">
+        <view class="left flex-start">
+          <image src="../../images/fg-word.png" alt="" class="doc-img"></image>
+          <view class="contract-info">
+            <view class="contract-code">合同编号：S01234567</view>
+            <view class="payer">付款人：李明辉</view>
+          </view>
+        </view>
+        <view class="right">￥680</view>
+      </view>
+      <view class="btn-group flex-end">
+        <button class="btn js-edit-customer">编辑客户</button>
+        <button class="btn js-new-contract">新建合同</button>
+      </view>
+    </view>
+    <view class="content-item">
+      <view class="top-info flex-between">
+        <view class="left">
+          <text class="icon-status">已付</text>
+          <text class="school">北京中关村幼儿园</text>
+        </view>
+        <view class="right">意向
+          <text class="money">￥368.00</text>
+        </view>
+      </view>
+      <view class="user-info">
+        <text class="name">张胜国</text>
+        <text class="phone">12345678901</text>
+      </view>
+      <view class="doc-detail flex-between">
+        <view class="left flex-start">
+          <image src="../../images/fg-word.png" alt="" class="doc-img"></image>
+          <view class="contract-info">
+            <view class="contract-code">合同编号：S01234567</view>
+            <view class="payer">付款人：李明辉</view>
+          </view>
+        </view>
+        <view class="right">￥680</view>
+      </view>
+      <view class="btn-group flex-end">
+        <button class="btn js-edit-customer">编辑客户</button>
+        <button class="btn js-edit-constract">编辑合同</button>
+      </view>
+    </view>
+  </view>
+</view>
