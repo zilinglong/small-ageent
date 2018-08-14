@@ -9,7 +9,8 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     navList: ['全部', '意向客户', '试用中', '已签合同', '已付费', '终止合同', '合同1', '合同2', '合同3'],
-    curNav: 0
+    curNav: 0,
+    winHeight: 0
   },
   //事件处理函数
   bindViewTap: function () {
@@ -22,6 +23,7 @@ Page({
       motto: 'mmxffff'
     });
   },
+  // 点击tab切换
   navSwitch(event) {
     let cur = event.currentTarget.dataset.index;
     if (cur === this.data.curNav) {
@@ -31,6 +33,13 @@ Page({
         curNav: cur
       });
     }
+  },
+  // 滑块滑动切换tab
+  swiperChange(event) {
+    let cur = event.detail.current;
+    this.setData({
+      curNav: cur
+    });
   },
   // 编辑客户
   goCustomer(event) {
@@ -66,6 +75,15 @@ Page({
         }
       })
     }
+    var that = this;
+    // 获取系统信息
+    wx.getSystemInfo({
+      success: function (res) {
+        that.setData({
+          winHeight: res.windowHeight
+        });
+      },
+    });
   },
   getUserInfo: function (e) {
     console.log(e)

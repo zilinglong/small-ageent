@@ -24,7 +24,7 @@
 .top-bar {
   width: 100%;
   overflow: scroll;
-  white-space:nowrap;
+  white-space: nowrap;
   font-size: 26rpx;
   color: #666;
   height: 92rpx;
@@ -73,6 +73,10 @@
 .top-info .name {
   font-size: 28rpx;
   margin-right: 60rpx;
+}
+
+.swiper-item {
+  width: 100%;
 }
 
 .right {
