@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/customer/customer",
     "pages/index/index",
     "pages/logs/logs",
     "pages/paid/paid",
     "pages/sale/sale",
-    "pages/order/order",
-    "pages/customer/customer"
+    "pages/order/order"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -20,7 +20,6 @@
     <view wx:for="{{navList}}" wx:key="idx" wx:for-index="idx" data-index="{{idx}}" class="nav-item {{curNav===idx?'active':''}}" bindtap="navSwitch">{{item}}</view>
   </scroll-view>
   <!-- 内容列表 -->
-
   <swiper style="height:{{winHeight}}px" bindchange="swiperChange" current="{{curNav}}">
     <swiper-item class="swiper-item">
       <view class="content-list">

@@ -5,7 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-    page: ''
+    page: '',
+    region: ['北京市', '北京市', '海淀区'],
+    customItem: '全部',
+    constractRange: ['意向', '已签', '未签'],
+    constractIndex: 0
+  },
+  // 页面事件
+  bindRegionChange(e) {
+    console.log('picker发送选择改变，携带值为：', e.detail.value);
+    this.setData({
+      region: e.detail.value
+    });
+  },
+  // 合同状态更改
+  constractChange(e) {
+    console.log(e);
+    this.setData({
+      constractIndex: e.detail.value
+    });
   },
 
   /**
@@ -13,7 +31,7 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      page: options.page
+      page: options.page || 'edit'
     });
   },
 
