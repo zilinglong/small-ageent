@@ -26,6 +26,10 @@
         {{constractRange[constractIndex]}}
       </view>
     </picker>
+    <span class="choose">
+      <i></i>
+      <span class="js-class">请选择</span>
+    </span>
   </view>
   <view class="customer-item js-class-type">
     <span class="label">班级类型</span>
