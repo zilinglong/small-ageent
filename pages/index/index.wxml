@@ -21,7 +21,7 @@
   </scroll-view>
   <!-- 内容列表 -->
 
-  <swiper style="height:{{winHeight}}px" bindchange="swiperChange">
+  <swiper style="height:{{winHeight}}px" bindchange="swiperChange" current="{{curNav}}">
     <swiper-item class="swiper-item">
       <view class="content-list">
         <view class="content-item">
